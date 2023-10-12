@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 553cafea77a141744a11113e2c3e791a, type: 3}
+  m_Name: Mission 8
+  m_EditorClassIdentifier: 
+  missionName: 
+  beforeMissionDescription: 
+  inMissionDescription: 
+  playerSide: 
+  enemySide: 
+  screenPos: {x: 32, y: 64.3}
+  isDoubleMission: 0
+  secondMission: {fileID: 0}
+  missionState: 1
+  previousMissions:
+  - {fileID: 11400000, guid: b7a086fdc08b8594c82e6fba981d16b5, type: 2}
+  unlockingHeroes: []
+  nextMissions: []
+  attachedHeroScore: 0
+  gainingScoreHeroes: []

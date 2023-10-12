@@ -430,7 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadImage: {fileID: 268744788}
-  fakeLoadTime: 4
+  fakeLoadTime: 2
 --- !u!4 &1017554896
 Transform:
   m_ObjectHideFlags: 0

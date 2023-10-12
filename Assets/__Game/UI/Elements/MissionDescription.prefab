@@ -402,6 +402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4322197728975913795}
   - component: {fileID: 4613167511836245316}
+  - component: {fileID: 5135429005243502912}
   m_Layer: 5
   m_Name: MissionDescription
   m_TagString: Untagged
@@ -442,6 +443,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5479756165521183655}
   m_CullTransparentMesh: 1
+--- !u!114 &5135429005243502912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5479756165521183655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca38678e3774e27a18c97fbe7c941b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missionNameLabel: {fileID: 8081500933146834283}
+  beforeMissionDescriptionLabel: {fileID: 5784948528137481386}
+  missionImage: {fileID: 5846900802561857625}
 --- !u!1 &5694061734587457437
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,3 +835,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2635289115076318448, guid: 70c46e5c40bbc014fb4ea19f013394de, type: 3}
   m_PrefabInstance: {fileID: 2210391481745540432}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5846900802561857625 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5731039546156211465, guid: 70c46e5c40bbc014fb4ea19f013394de, type: 3}
+  m_PrefabInstance: {fileID: 2210391481745540432}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
