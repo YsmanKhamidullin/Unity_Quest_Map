@@ -239,6 +239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mission_Double
       objectReference: {fileID: 0}
+    - target: {fileID: 6347313376139439270, guid: 31c8479de44628240b1c941fd127ecde, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6411968947056879569, guid: 31c8479de44628240b1c941fd127ecde, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -318,5 +322,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetMission: {fileID: 0}
   missionNumberLabel: {fileID: 2882947656537305976}
+  nodeButton: {fileID: 9196784613872636175}
   secondTargetMission: {fileID: 0}
   secondMissionNumberLabel: {fileID: 287599330882503428}
+--- !u!114 &9196784613872636175 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6347313376139439270, guid: 31c8479de44628240b1c941fd127ecde, type: 3}
+  m_PrefabInstance: {fileID: 2861937524401012137}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4412893021224034071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

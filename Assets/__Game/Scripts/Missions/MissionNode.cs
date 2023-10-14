@@ -1,40 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using TMPro;
-using UnityEngine;
 
-public class MissionNode : MonoBehaviour
+public class MissionNode : BaseMissionNode
 {
-    public Mission TargetMission => targetMission;
-    [SerializeField] protected Mission targetMission;
-    [SerializeField] protected TextMeshProUGUI missionNumberLabel;
-
-    private void OnDrawGizmos()
+    public override void CalculateCurrentState()
     {
-        UpdateScreenPos();
-    }
-    private void UpdateScreenPos()
-    {
-        if (targetMission == null)
+        gameObject.SetActive(true);
+        switch (TargetMission.MissionState)
         {
-            return;
+            case MissionState.Active:
+                nodeButton.interactable = true;
+                break;
+            case MissionState.Blocked:
+                gameObject.SetActive(false);
+                break;
+            case MissionState.TemporarilyBlocked:
+                nodeButton.interactable = false;
+                break;
+            case MissionState.Completed:
+                nodeButton.interactable = false;
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
         }
-
-        var screenResolution = Screen.currentResolution;
-        var screenSize = new Vector2(screenResolution.width, screenResolution.height);
-        var missionScreenPos = targetMission.ScreenPos;
-
-        var max = 100f;
-        var missionXPercent = Mathf.Clamp(missionScreenPos.x, 0f, max) / max;
-        var missionYPercent = Mathf.Clamp(missionScreenPos.y, 0f, max) / max;
-        var x = Mathf.Lerp(0, screenSize.x, missionXPercent);
-        var y = Mathf.Lerp(0, screenSize.y, missionYPercent);
-        transform.position = new Vector3(x, y, 0);
-    }
-
-    public virtual void SetMission(Mission mission, string missionNumber)
-    {
-        targetMission = mission;
-        missionNumberLabel.text = missionNumber;
     }
 }

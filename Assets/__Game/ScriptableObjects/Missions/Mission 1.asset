@@ -39,8 +39,10 @@ MonoBehaviour:
     \u0447\u0442\u043E-\u0442\u043E \u0443\u0436\u0430\u0441\u043D\u043E\u0435!"
   playerSide: "\u041D\u0435\u0442 \u0433\u043D\u0435\u0437\u0434\u0430"
   enemySide: "\u0413\u0430\u043B\u043A\u0438, \u0441\u043E\u0439\u043A\u0438, \u0432\u043E\u0440\u043E\u0431\u044C\u0438"
+  id: 1055609853
   screenPos: {x: 48.06, y: 26.5}
   isDoubleMission: 0
+  isSecondMission: 0
   secondMission: {fileID: 0}
   missionState: 0
   previousMissions: []
