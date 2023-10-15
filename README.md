@@ -13,7 +13,7 @@ Data of missions and heroes containing in Scriptable Objects. This provides easy
 
 > Scriptable object of mission:
 > 
-> ![MissionInfo.png](MissionInfo.png)
+> ![MissionInfo.png](https://media.githubusercontent.com/media/YsmanKhamidullin/Unity_Quest_Map/main/MissionInfo.png)
 > 
 > 1. To change screen position of Node you can easily drag ScreenPos values. 
 > Value (0,0) - is left down corner, and value (100,100) is upper right corner
@@ -26,7 +26,7 @@ Data of missions and heroes containing in Scriptable Objects. This provides easy
 Then Root initialize required components and give them data.
 > 2. After initialization, MissionMapScreen.cs will generate a node map corresponding to the mission information.
 > 3. When player open new window - MissionMapScreen.cs sends data to this windows  
-> ![MissionMapScreen.png](MissionMapScreen.png) 
+> ![MissionMapScreen.png](https://media.githubusercontent.com/media/YsmanKhamidullin/Unity_Quest_Map/main/MissionMapScreen.png) 
 
 # Imported packages
 
